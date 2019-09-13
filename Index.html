@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Kalash Shah</title>
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="topnav">
+    <a  class="active" href="Index.html">Home</a>
+    <a  href="MyEarlyLife.html">My Early Life </a>
+    <a href="MyFamily.html">My Family</a>
+    <a href="Interests.html">My Interests</a>
+    <a href="MySchedule.html">My High School Schedule</a>
+
+</div>
+
+
+
+
+<div id="Title">
+    <br><br><br>
+    <h1 align="center">Kalash Shah</h1>
+
+</div>
+<img class="center" src="Kalash.jpg" width="475" height="550"/>
+<h3>
+    Welcome to my website. To start with, check my awesome switch out below. Try it out by clicking on it.</h3>
+
+<h2>Toggle Switch</h2>
+
+<label class="switch">
+    <input type="checkbox">
+    <span class="slider"></span>
+</label>
+
+<label class="switch">
+    <input type="checkbox" checked>
+    <span class="slider"></span>
+</label><br><br>
+
+<label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+</label>
+
+<label class="switch">
+    <input type="checkbox" checked>
+    <span class="slider round"></span>
+</label>
+
+<h2>About Me</h2>
+<h3> I am a <em>Junior</em> at <a href="https://adc.d211.org/Domain/12">Hoffman Estates High School</a>.
+    <br> I started Hoffman as a <em>sophomore</em>.
+    <br>All my teachers are great and they have helped me a lot in achieving my goals.
+    <br>I aspire to become a data scientist but before that enjoy my two years at Hoffman.<br>
+    <span style='font-size:100px;'>&#128525;</span>
+
+
+</h3>
+
+
+
+
+
